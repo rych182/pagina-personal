@@ -248,3 +248,27 @@ footer .contacto .formulario .boton:hover {
 	background: #387bea;
 }
 
+footer .redes-sociales {
+	background: #1e2b38;
+	padding: 60px 0;
+}
+
+footer .redes-sociales .contenedor {
+	display: flex; /*inicializamos flexbox en la cada padre que es contenedor*/
+	justify-content:center; /*centramos la caja*/
+}
+
+footer .redes-sociales a {
+	color: #fff; /*iconos de color blanco*/
+	text-align: center;
+	width: 100px;
+	display: block;
+	padding: 15px 0;
+	border-radius: 3px;
+	font-size: 30px;/*Tamaño de los íconos*/
+	background: #ccc;
+	margin: 0 20px;/*margen entre cada ícono*/
+}
+
+footer .redes-sociales .twitter:hover{background: #1da1f2;}
+footer .redes-sociales .github:hover{background: #6e5494;}
