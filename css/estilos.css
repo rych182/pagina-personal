@@ -164,8 +164,12 @@ header .contenedor-texto .texto .profesion {
 
 .main .trabajos .contenedor-trabajos .trabajo .thumb img{
 	width: 100%;
+	height: 100%;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
 	vertical-align: top;
 	border-radius: 10px;
+
 }
 
 .main .trabajos .contenedor-trabajos .trabajo .descripcion {
