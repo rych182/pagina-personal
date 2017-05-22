@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<link rel="stylesheet" href="css/bootstrap.css">
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<link rel="stylesheet" href="css/sidebar.css">
+
+<body>
+	<div id="wrapper">
+		
+		<!--Sidebar-->
+		<div id="sidebar-wrapper">
+			<ul class="sidebar-nav">
+				<li><a href="#"><img src="elementos web/menu/club.png" alt=""/></a></li>
+				<li><a href="#"><img src="elementos web/menu/tienda.png" alt=""/></a></li>
+				<li><a href="#"><img src="elementos web/menu/servicios.png" alt=""/></a></li>
+			</ul>
+		</div>
+
+		<!--Page content-->
+		<div id="page-content-wrapper">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-12">
+						<a href="#" class="btn btn-success" id="menu-toggle">Toggle Menu</a>
+						<h1>Siderbar Layouts are Cool</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quasi, tenetur fugiat accusantium eos officia enim fugit, cupiditate quaerat sunt, possimus nihil ipsum voluptate corporis adipisci. Dolores non ex eveniet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore libero id, nobis consectetur quo, aliquid perferendis illo et modi, quisquam dicta reiciendis quam sed. Dolor excepturi, corporis. Voluptatum, quia, nisi.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+<!--Menu Toggle script-->
+	<script>
+		$("#menu-toggle").click( function (e) {
+			e.preventDefault();
+			$("#wrapper").toggleClass("menuDisplayed");
+		});
+	</script>
+</body>
+</html>

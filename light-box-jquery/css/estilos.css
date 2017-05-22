@@ -1,0 +1,119 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	background: #111;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+.galeria {
+	padding: 20px;
+	display: flex; /*Para alinearlo*/
+	flex-wrap: wrap;/*Para que cuando no queda se pase abajo*/
+	justify-content: center;
+}
+
+.galeria__item {
+	width: 80%;
+	cursor: pointer;
+}
+
+h1 {
+	color: white;
+}
+
+.contenedor {
+	width: 90%;
+	max-width: 1000px;
+	margin: auto;
+	overflow: hidden; /*Nos permite acomodar el comportamiento de las cajas*/ /*Corta todo lo que sobre a partir de un contenedor*/
+}
+
+header .contenedor { /*Para que el contenedor del header sea mas grande y se vea nuestra imagen*/
+	position: relative;/*El relative se usa cuando uno quiere mover los elementos*/
+	height: 150px; /*Le dimos la altura a nuestro header para que se vea la imagen*/
+}
+
+header .menu {
+	width: 100%; /*Esto es simplemente para asegurarnos que será el 100% del ancho*/
+	text-align: center; /*Para que los elementos se pongan a la derecha*/
+	flex-wrap: wrap;/*Para que cuando no queda se pase abajo*/
+	justify-content: center;
+}
+
+header .menu a {
+	color: white;
+	font-size: 20px;
+	font-weight: 300;/*Este tamaño viene en el google font que utilizaste*/
+	display: inline-block; /*Para que los elementos se pongan uno al lado del otro*/
+	margin: 10px 10px;
+	text-decoration: none; 
+	position: relative; /*Lo utilizaremos para trabajar con Jquery*/
+}
+
+header .menu a:hover {
+	text-decoration: underline; /*Subraya cuando acercas el mouse a los links*/
+}
+
+
+@media (min-width: 480px) {
+	.galeria__item{
+		width: 48%;
+		margin: 5px;
+	}
+}
+
+@media (min-width: 768px) {
+	.galeria__item{
+		width: 30%;
+	}
+	
+}
+
+@media (min-width: 1024px) {
+	.galeria__item{
+		width: 20%;
+	}
+}
+
+.modal {
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	background: rgba(0,0,0,0.7);
+	top: 0;/*Para que la sombra abarque hasta arriba*/
+	left: 0;
+
+	display: flex;
+	justify-content:center;
+	align-items:center;
+}
+
+.modal__img {
+	width: 80%;
+	max-width: 700px;
+}
+
+.modal__boton {
+	width: 50px;
+	height: 50px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 25px;
+	font-family: monospace;
+	line-height: 50px;/*Se pone en medio*/
+	text-align: center;
+	background: red;
+	border-radius: 50%;
+	cursor: pointer;
+
+	position: absolute;
+	top: 0px;
+	right: 250px;
+}

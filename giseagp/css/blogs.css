@@ -1,0 +1,52 @@
+#blog h3, h4, h5{
+	text-align: center;
+
+}
+
+#blog .contenedor {
+	display: flex;
+	justify-content:center;/*Para que este centrado el contenido de la clase contenedor, esto hace que
+	las imagenes estén en una sola linea.*/
+	flex-wrap:wrap;/*Para que los elementos que no caben, se bajen uno debajo de otro*/
+}
+
+#blog article {
+	margin: 15px;/*Espacio de 15pixeles entre cada imagen*/
+}
+
+#blog img {
+	width: 100%;
+	max-width: 280px;/*Lo máximo que va a crecer el ancho*/
+}
+/* ----------------------------------------------------------------*/
+#blog{
+	background: #333; /*Color de fondo negro opaco*/
+	color: #fff; /*Color de letra blanco*/
+	padding: 20px;
+}
+
+.info-imagenes {
+	margin: 20px; /*Separación entre cada imagen*/
+
+}
+
+.info-imagenes img {
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+	border: 7px solid #fff; /*Da a los bordes un efecto circular para que la foto se vea en 
+	marco de circulo con un borde de 7pixeles*/
+}
+/*--------------------------Resposive Design-----------------------*/
+@media (min-width: 1024px) { /*Desktop*/
+	.info-imagenes {
+		width: 25%;
+	}
+}
+
+@media (min-width: 480px) { /*Tablet*/
+	.info-imagenes {
+		width: 25%;
+	}
+}
+

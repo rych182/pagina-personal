@@ -18,6 +18,18 @@ body {
 }
 
 /* ------ ------ HEADER ------- -------*/
+.ir-arriba{
+	display: none;
+	padding: 20px;
+	background: #024959;
+	font-size: 20px;
+	color: #fff;
+	cursor: pointer; /*The cursor appears as you approach*/
+	position: fixed;
+	right: 40px; /*with right & bottom, i position the button in the corner*/
+	bottom: 20px;
+}
+
 header {
 	background: url('../img/orizaba3.jpg');
 	/*background-repeat: no-repeat;
@@ -41,6 +53,7 @@ header .menu a {
 	text-decoration: none;
 	border-bottom: 2px solid transparent;/*Para que no haya un salto en el header*/
 	font-size: 1em; /*Son 16px, valor tomado del body*/
+	position: relative;
 }
 
 header .menu a:hover {
@@ -160,13 +173,13 @@ header .contenedor-texto .texto .profesion {
 .main .trabajos .contenedor-trabajos .trabajo .thumb {
 	width: 100%;/*Para que abarque el espacio del contenedor hijo*/
 	margin: 10px;
+	
 }
 
 .main .trabajos .contenedor-trabajos .trabajo .thumb img{
 	width: 100%;
 	vertical-align: top;
 	border-radius: 10px;
-	overflow:hidden; 
 
 }
 
@@ -301,5 +314,21 @@ footer .redes-sociales .github:hover{background: #6e5494;}
 	footer .redes-sociales .contenedor {
 		
 	}
+	.ir-arriba{
+	display: none;
+	padding: 10px;
+	background: #024959;
+	font-size: 10px;
+	color: #fff;
+	cursor: pointer; /*The cursor appears as you approach*/
+	position: fixed;
+	right: 40px; /*with right & bottom, i position the button in the corner*/
+	bottom: 20px;
+	}	
 }
 
+/*			+++ Otras clases ++++			*/
+
+.centrar{
+	text-align: center;
+}

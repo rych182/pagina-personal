@@ -1,0 +1,61 @@
+#menu-bar {
+	display: none; /*Hace que no aparezca nada */
+}
+
+header label {
+	float: right; /*Que se flote hacia la derecha*/
+	font-size: 28px; /*Tamaño de letra del texto*/
+	margin: 6px 0;/*Un margen*/
+	cursor: pointer;/*Para que aparezca una manita*/
+
+}
+
+.menu {
+	position: absolute;
+	top: 50px;/*Para que empiece desde abajo del header*/
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background: rgba(51,51,51,0.9);/*Da el color negro opaco al menú*/
+	transition: all 0.5s;
+	transform: translatex(-100%);/*Para que se oculte el menú de manera horizontal*/
+}
+
+.menu a {
+	display: block;
+	color: #fff;/*Color blanco*/
+	height: 50px;/*Altura*/
+	text-decoration: none; 
+	padding: 15px;/*Le da un espacio hacia arriba y hacia los lados*/
+	border-bottom: 1px solid rgba(255,255,255,0.5);/*Da margen blanco, la raya blanca entre cada menu*/
+}
+
+.menu a:hover {/*Para que cambie de color cuando pase el mouse por una opcion de menu*/
+	background: rgba(255,255,255,0.5);
+}
+
+#menu-bar:checked ~ .menu {
+	transform: translateX(0%);
+}
+
+/*-------------------RESPONSIVE DESIGN-----------------------------*/
+
+@media (min-width: 1024px) { 
+	/* "min-width"se puede forzar a que un elemento sólo reduzca su anchura hasta cierto límite*/
+	.menu{ /*Recuerda que el menú tiene "position:absolute;" */
+		position: static;
+		width: auto;
+		height: auto;
+		transform: translatex(0%);/*Ya no se va a trasladar por eso 0%*/
+		float: right; /*Para que el menú flote a la derecha*/
+		display: flex;
+	}
+
+	.menu a {
+		border: none; /*Quita el bordesito blanco*/
+	}
+
+	header label {
+		display: none; /*Desaparece el ícono de menu*/
+	}
+}

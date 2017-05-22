@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Menú responsive</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+	
+<!--<div class="container"> Si comentamos el contenedor principal, el menú abarca toda la página-->
+		<nav class="navbar navbar-static-top navbar-inverse">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar1">
+						<span class="sr-only">Alternar menu</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<!--Links del menu-->
+				<div class="collapse navbar-collapse" id="navbar1">
+					<ul class="nav navbar-nav">
+						<li><a href="#">Inicio</a></li>
+						<li><a href="#">Blog</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!--
+		navbar: Sirve para identificar que queremos un menú de navegación
+		navbar-default: Es el color que se tiene por defecto
+		navbar-inverse: Pone el menú de color negro
+		navbar-static-top: Quita las esquina redondeadas al menú cuando abarca todo el ancho de la página
+		navbar-fixed-top: mantiene el menú fijo siempre en la página
+		navbar-header: como se va a ver el menú en dispositivos moviles
+		data-target: cual va a ser el menu que queremos mostrar(queremos que el objetivo del boton sea el que tenga el "id" de lo que tenga dentro data-target)
+		sr-only: nos permite que sea visible en los dispositivos de lectura como un kindle
+		icon-bar: Sirve para hacer las 3 rayitas del icono de menu
+		collapse: sirven para ocultar el menu en dispositivos moviles
+		navbar-collapse: sirven para ocultar el menu en dispositivos moviles
+		active: sirve para que el menú quede marcado en que pagina estamos
+		dropdown: es un submenu
+		dropdownn-toggle: (este necesita el atributo data-toggle="dropdown")
+		caret: es el triangulito que se muestra en el submenu
+		dropdown-menu: sirve para desplegar el sub-menu
+		divider: divide el submenu
+		navbar-inverse: Pone el menú de color negro
+		navbar-static-top: Quita las esquina redondeadas al menú cuando abarca todo el ancho de la página
+	-->
+		
+<!--	</div> -->
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>

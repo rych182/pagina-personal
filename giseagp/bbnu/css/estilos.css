@@ -1,0 +1,67 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	overflow: hidden; /*Quita el padding para que abarque el 100% del body y quite los posibles scrolls*/
+	
+}
+
+.sidebar {
+	position: absolute;/*Así ocupa el 100% de la altura rompiendo el flujo*/
+	width: 250px;
+	height: 100%;
+	background: #333;
+	outline: 1px solid #2a2a2a;/*outline es una linea que no genera un espacio dentro del modelo de caja*/
+	box-sizing:border-box;
+	overflow: hidden;
+}
+
+.sidebar ul {
+	list-style: none;/*Sirve para quitarle los puntitos a la lista del menu*/
+	padding: 0;
+	margin: 0;
+}
+
+.sidebar li {
+	outline: 1px solid #2a2a2a; /*Linea negra divisoria*/
+	/*outline es una linea que no genera un espacio dentro del modelo de caja*/
+	transition: all 0.3s; /*Indicas a que propiedad quieres que se le aplique la transicion*/
+}
+
+.sidebar li:hover { /*La acción que va a hacer cuando pase el mouse por la lista*/
+	background: #444;
+	border-left: 5px solid #eee; /*El borde blanco del lado izquierdo*/
+}
+
+.sidebar a {
+	display: block; /*Hace que se vuelvan un bloque para así ser mas fácil de mover*/
+	color: #fff; /*Color blanco*/
+	text-decoration: none; /*Quita el subrayado de los links*/
+	padding: 19px; /*10px de distancia hacia abajo y al lado entre cada li*/
+	margin: 0;
+	text-align: center;
+
+}
+
+.contenido {
+	width: 100%;
+	height: 100%;
+	position: absolute;/*Con esto, el contenido ocupa todo el alto y el ancho de la ventana*/
+	background: #eee;
+	padding: 30px;
+	transition: all 0.3s;
+	box-sizing: border-box;
+	padding-right: 250px;
+	 /*Para que el padding no se salga de la caja*/
+}
+
+.menu-bar {
+	cursor: pointer;
+}
+.abrir {
+	transform: translateX(250px);
+}
+
+.tamano{
+	box-sizing: border-box;
+	overflow: hidden;
+}

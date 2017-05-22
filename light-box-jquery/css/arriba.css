@@ -1,0 +1,25 @@
+.ir-arriba{
+	display: none;
+	padding: 20px;
+	background: #024959;
+	font-size: 20px;
+	color: #fff;
+	cursor: pointer; /*The cursor appears as you approach*/
+	position: fixed;
+	right: 40px; /*with right & bottom, i position the button in the corner*/
+	bottom: 20px;
+}
+
+@media screen and (max-width: 400px) {
+	.ir-arriba{
+		display: none;
+		padding: 10px;
+		background: #024959;
+		font-size: 10px;
+		color: #fff;
+		cursor: pointer; /*The cursor appears as you approach*/
+		position: fixed;
+		right: 40px; /*with right & bottom, i position the button in the corner*/
+		bottom: 20px;
+	}	
+}

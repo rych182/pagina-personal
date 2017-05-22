@@ -1,0 +1,113 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(menu.css);
+@import url(banner.css);
+@import url(blogs.css);
+
+*	{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+.links{
+	color: white;
+}
+
+.links2{
+	color: black;
+}
+
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+
+header{
+	width: 100%;
+	height: 50px;
+	background: #191970;
+	color: #FFD700;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+}
+
+.contenedor {
+	width: 98%;
+	margin: auto;
+}
+
+h1{
+	float: left;
+}
+
+header .contenedor {
+	display: 
+}
+
+section {
+	width: 100%;
+	margin-bottom: 25px;/*Para que cuando haya mas cotenido LO EMPUJE*/
+}
+
+#bienvenidos {
+	text-align: center;
+}
+
+.alineacion { /*Alinea el texto hacia la izquierda*/
+	text-align: left;
+
+}
+
+/*------------------FOOTER----------------------------------*/
+footer .contenedor{
+	display: flex;
+	flex-wrap: wrap;/*Para que los elementos que no caben, se bajen uno debajo de otro*/
+	justify-content: center;/*Para que este centrado el contenido de la clase contenedor, esto hace que
+	las imagenes estén en una sola linea.*/
+	padding-bottom: 25px;
+}
+
+.copy {
+	font-size: 20px; /*El parrafito*/
+}
+
+.sociales { /*iconos de redes sociales*/
+	width: 100%;
+	text-align: center;
+	font-size: 28px;
+}
+
+.sociales a { /*Links de Iconos */
+	color: #3333;
+	text-decoration: none;
+}
+
+.ir-arriba {
+	display:inline-block;/*Para que al inicio no se muestre */
+	padding:10px;
+	background:#024959;
+	font-size:20px;
+	color:#fff;
+	cursor:pointer;
+	position: fixed;
+	bottom:20px;
+	right:10px;
+}
+/*-------------------Responsive Design-------------------------*/
+
+@media (min-width: 1024px) {
+	.contenedor {
+		width: 1000px; /*Esto hara que todos los contenedores abarque lo mismo y estén
+		a la misma altura*/
+		
+	}
+}
+
+@media (min-width: 1024px){
+	.ir-arriba{
+		padding: 20px;
+		right: 20px;
+	}
+}
