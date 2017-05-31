@@ -46,7 +46,7 @@ $(document).ready(function() {
 	});
 	$('#btn-contacto').on('click', function(){
 		$('html, body').animate({
-			scrollTop: 1550//Los pixeles que recorre hacia abajo
+			scrollTop: 2550//Los pixeles que recorre hacia abajo
 		}, 500);
 	});
 
