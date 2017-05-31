@@ -174,9 +174,9 @@
 		<section class="contacto" id="contacto">
 			<div class="contenedor">
 				<h3 class="titulo">Contacto</h3>
-				<form class="formulario" action="">
-					<input type="text" placeholder="Nombre" name="nombre" required>
-					<input type="email" placeholder="Correo" name="correo" required>
+				<form class="formulario" action="enviar.php" method="post">
+					<input type="text" name="nombre" placeholder="Nombre">
+					<input type="text" name="correo" placeholder="Correo">
 					<textarea name="mensaje" placeholder="Mensaje"></textarea>
 					<input class="boton" type="submit" value="Enviar">
 				</form>
